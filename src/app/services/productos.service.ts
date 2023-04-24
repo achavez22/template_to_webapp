@@ -52,7 +52,6 @@ export class ProductosService {
 
   private filterProducts(termino: string){ 
     this.productsFilter = [];
-
     termino = termino.toLocaleLowerCase();
     this.products.forEach( p => { 
       const titleLower = p.titulo.toLocaleLowerCase();
